@@ -1,6 +1,5 @@
 package com.example.salutemendietamediterranea
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
