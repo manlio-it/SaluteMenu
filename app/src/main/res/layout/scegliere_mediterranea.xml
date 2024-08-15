@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".Scegliere_Mediterranea">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/ActionBarsSfondo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/indietro"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5 MOTIVI PER SCEGLIERE PROPRIO\nLA DIETA MEDITERRANEA"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.4"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Equilibrio Nutrizionale"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uno dei principali vantaggi della dieta mediterranea è il suo equilibrio nutrizionale. Questa dieta fornisce una vasta gamma di nutrienti essenziali, tra cui vitamine, minerali, fibre e antiossidanti. Il consumo abbondante di frutta e verdura garantisce un apporto adeguato di fibre, che aiuta a mantenere il senso di sazietà più a lungo, riducendo così la necessità di spuntini eccessivi tra i pasti. Le fibre inoltre aiutano a regolare il transito intestinale e a prevenire problemi digestivi."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Benefici a Lungo Termine"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numerosi studi hanno dimostrato che la dieta mediterranea non solo aiuta nella perdita di peso, ma offre anche benefici a lungo termine per la salute. Ad esempio, è associata a un minor rischio di sviluppare malattie croniche come diabete di tipo 2, malattie cardiache e alcune forme di cancro. Questo rende la dieta mediterranea una scelta ideale per chi cerca non solo di dimagrire, ma anche di migliorare la propria salute generale."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Moderazione e Varietà"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Un altro aspetto fondamentale della dieta mediterranea è la moderazione. Non ci sono alimenti completamente proibiti, ma piuttosto viene promossa una gestione equilibrata delle porzioni e una varietà di cibi. Questo approccio riduce il rischio di carenze nutrizionali e rende la dieta più sostenibile nel lungo periodo, evitando la monotonia che spesso porta all'abbandono di altre diete più restrittive."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Grassi Sani"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'olio d'oliva, ricco di acidi grassi monoinsaturi, è una componente chiave della dieta mediterranea. Questi grassi sani aiutano a ridurre i livelli di colesterolo cattivo (LDL) e a aumentare il colesterolo buono (HDL), migliorando la salute cardiovascolare. A differenza dei grassi saturi presenti nella carne rossa e nei prodotti lattiero-caseari, i grassi monoinsaturi non sono associati a un aumento del rischio di malattie cardiache."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Proteine Magre"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La dieta mediterranea favorisce il consumo di pesce e pollame, che sono fonti di proteine magre. Il pesce, in particolare il pesce azzurro come salmone, sardine e sgombro, è ricco di acidi grassi omega-3, noti per i loro effetti benefici sulla salute del cuore e sul metabolismo. Le proteine magre sono essenziali per la costruzione e il mantenimento della massa muscolare, soprattutto durante il processo di perdita di peso."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

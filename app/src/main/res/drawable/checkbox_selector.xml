@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selezionato -->
+    <item android:state_checked="true"
+        android:drawable="@color/AzzurroSaluteMenu" />
+    <!-- Non selezionato -->
+    <item android:drawable="@color/white" />
+</selector>

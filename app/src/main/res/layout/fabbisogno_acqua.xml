@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".Fabbisogno_acqua">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/ActionBarsSfondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/indietro"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="45dp">
+
+
+            <TextView
+                android:id="@+id/textViewInformazioni"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                app:layout_constraintWidth_percent="0.80"
+                android:text="IL TUO FABBISOGNO D'ACQUA"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/informazionimancanti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="Per calcolare il tuo fabbisogno d'acqua ci servono alcune informazioni, se vuoi utilizzare questa funzionalità, devi prima completare il tuo profilo utente."
+                android:textColor="@color/RossoBordoSaluteMenu"
+                android:lineSpacingMultiplier="1.4"
+                android:textSize="15sp"
+                android:background="@drawable/text_background"
+                app:layout_constraintTop_toBottomOf="@id/textViewInformazioni"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="28dp"/>
+
+            <Button
+                android:id="@+id/bottone_profilo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintWidth_percent="0.80"
+                android:background="@drawable/button_go"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Vai al tuo Profilo utente"
+                android:lineSpacingMultiplier="1.15"
+                android:textColor="@color/AzzurroSaluteMenu"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/informazionimancanti"/>
+
+            <TextView
+                android:id="@+id/fabbisogno_acqua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:padding="16dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                app:layout_constraintTop_toBottomOf="@id/textViewInformazioni"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/fabbisogno_acqua_spiegazione1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                app:layout_constraintTop_toBottomOf="@id/fabbisogno_acqua"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/fabbisogno_acqua_spiegazione2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:padding="15dp"
+                android:text="Ricorda che questa è solo una stima indicativa e può variare in base alla stagione e alle tue esigenze individuali. Durante i periodi di caldo intenso o se svolgi attività fisica intensa, potrebbe essere necessario bere più acqua."
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                app:layout_constraintTop_toBottomOf="@id/fabbisogno_acqua_spiegazione1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

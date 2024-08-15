@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".Super_Food">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/ActionBarsSfondo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/indietro"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="COSA SONO I SUPER-FOOD\nE PERCHÉ SONO IMPORTANTI PER LA TUA SALUTE"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.4"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I super-food sono alimenti che hanno un contenuto particolarmente elevato di nutrienti essenziali, come vitamine, minerali, antiossidanti e fibre. Questi alimenti sono noti per i loro numerosi benefici per la salute, tra cui il potenziamento del sistema immunitario, la riduzione del rischio di malattie croniche e il miglioramento del benessere generale. Integrarli nella propria dieta quotidiana può offrire numerosi vantaggi, specialmente se associati a uno stile di vita sano."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vediamo insieme i 10 migliori SUPERFOOD nella dieta mediterranea"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Avocado"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ricco di grassi monoinsaturi sani, vitamina E e potassio, l'avocado contribuisce alla salute del cuore e ha proprietà anti-infiammatorie."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Mirtilli"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Questi piccoli frutti sono pieni di antiossidanti, in particolare antociani, che proteggono il corpo dai danni dei radicali liberi e migliorano la funzione cerebrale."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Salmone"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fonte eccellente di acidi grassi omega-3, il salmone supporta la salute cardiovascolare e riduce l'infiammazione nel corpo."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Noci"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Piene di grassi sani, proteine, e fibre, le noci sono ottime per migliorare la salute del cuore e mantenere livelli stabili di zucchero nel sangue."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Quinoa"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Un grano antichissimo, la quinoa è una proteina completa che contiene tutti gli aminoacidi essenziali, oltre a essere ricca di fibre e minerali come il magnesio."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Spinaci"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ricchi di ferro, vitamine A e C, e antiossidanti, gli spinaci aiutano a mantenere una pelle sana, migliorano la vista e supportano la funzione immunitaria."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Olio d'Oliva Extra Vergine"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Un pilastro della dieta mediterranea, l'olio d'oliva è ricco di antiossidanti e grassi monoinsaturi, che favoriscono la salute del cuore e riducono l'infiammazione."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Curcuma"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Con il suo potente principio attivo, la curcumina, la curcuma ha proprietà antinfiammatorie e antiossidanti, e può contribuire alla prevenzione di malattie croniche."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Aglio"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conosciuto per le sue proprietà antibatteriche e antinfiammatorie, l'aglio può migliorare la salute cardiovascolare e potenziare il sistema immunitario."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Tè Verde"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ricco di antiossidanti come le catechine, il tè verde può migliorare la funzione cerebrale, favorire la perdita di peso e ridurre il rischio di malattie cardiovascolari."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Integrare questi super-food nella dieta mediterranea può migliorare significativamente la salute generale. La dieta mediterranea, già nota per i suoi benefici cardioprotettivi grazie all'abbondanza di frutta, verdura, cereali integrali, legumi, noci e olio d'oliva, può trarre ulteriore vantaggio dall'aggiunta di super-food. Questi alimenti, infatti, contribuiscono a ridurre l'infiammazione, migliorare la salute del cuore, potenziare il sistema immunitario e favorire la perdita di peso. Adottare una dieta mediterranea arricchita con super-food può rappresentare un passo importante verso un benessere ottimale e una vita più sana."
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfortaa_medium"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

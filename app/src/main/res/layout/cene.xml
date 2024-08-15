@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cene">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/settanta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="35dp">
+
+                <!--Ricetta 1-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_ricetta_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/sfondo_ricette"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout_Titolo_ricetta_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView_titolo_ricetta_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Zuppa di farro e fagioli"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Titolo_ricetta_1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Corpo_ricetta_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintWidth_percent="0.475"
+                            app:layout_constraintEnd_toStartOf="@id/constraintLayout_Contenuto_ricetta_1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView_ricetta_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                app:layout_constraintDimensionRatio="H,1350:1080"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:background="@drawable/cena1"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Contenuto_ricetta_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintWidth_percent="0.525"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/constraintLayout_Corpo_ricetta_1"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView_ingredienti_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.8"
+                                android:gravity="center"
+                                android:text="Ingredienti:\n60 g di farro, 100 g di fagioli, 1 carota, 1 costa di sedano, 1 cipolla, 1 cucchiaio di olio EVO, sale e pepe q.b."
+                                android:textColor="@color/white"
+                                android:textSize="9sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView_tempo_preparazione_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Tempo di preparazione: 50 minuti"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_ingredienti_1"
+                                app:layout_constraintStart_toStartOf="@+id/textView_ingredienti_1"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_ingredienti_1" />
+
+                            <TextView
+                                android:id="@+id/textView_calorie_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="400 KCal"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_tempo_preparazione_1"
+                                app:layout_constraintStart_toStartOf="@+id/textView_tempo_preparazione_1"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_tempo_preparazione_1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!--Ricetta 2-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_ricetta_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/sfondo_ricette"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout_ricetta_1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout_Titolo_ricetta_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView_titolo_ricetta_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Insalata di lenticchie con verdure"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Titolo_ricetta_2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Corpo_ricetta_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintWidth_percent="0.475"
+                            app:layout_constraintEnd_toStartOf="@id/constraintLayout_Contenuto_ricetta_2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView_ricetta_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                app:layout_constraintDimensionRatio="H,1350:1080"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:background="@drawable/cena2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Contenuto_ricetta_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintWidth_percent="0.525"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/constraintLayout_Corpo_ricetta_2"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView_ingredienti_2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.8"
+                                android:gravity="center"
+                                android:text="Ingredienti:\n80 g di lenticchie,, 50 g di carote, 50 g di cetrioli, 50 g di pomodorini, 1 cucchiaio di olio EVO, sale e pepe q.b."
+                                android:textColor="@color/white"
+                                android:textSize="9sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView_tempo_preparazione_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Tempo di preparazione: 40 minuti"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_ingredienti_2"
+                                app:layout_constraintStart_toStartOf="@+id/textView_ingredienti_2"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_ingredienti_2" />
+
+                            <TextView
+                                android:id="@+id/textView_calorie_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="375 KCal"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_tempo_preparazione_2"
+                                app:layout_constraintStart_toStartOf="@+id/textView_tempo_preparazione_2"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_tempo_preparazione_2" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--Ricetta 3-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_ricetta_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/sfondo_ricette"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout_ricetta_2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout_Titolo_ricetta_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView_titolo_ricetta_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Minestrone di verdure"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Titolo_ricetta_3">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Corpo_ricetta_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintWidth_percent="0.475"
+                            app:layout_constraintEnd_toStartOf="@id/constraintLayout_Contenuto_ricetta_3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView_ricetta_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                app:layout_constraintDimensionRatio="H,1350:1080"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:background="@drawable/cena3"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Contenuto_ricetta_3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintWidth_percent="0.525"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/constraintLayout_Corpo_ricetta_3"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView_ingredienti_3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.8"
+                                android:gravity="center"
+                                android:text="Ingredienti:\n100 g di patate, 50 g di carote, 50 g di zucchine, 50 g di fagiolini, 1 pomodoro maturo. 1 cucchiaio di olio EVO, sale e pepe q.b."
+                                android:textColor="@color/white"
+                                android:textSize="9sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView_tempo_preparazione_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Tempo di preparazione: 45 minuti"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_ingredienti_3"
+                                app:layout_constraintStart_toStartOf="@+id/textView_ingredienti_3"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_ingredienti_3" />
+
+                            <TextView
+                                android:id="@+id/textView_calorie_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="320 KCal"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_tempo_preparazione_3"
+                                app:layout_constraintStart_toStartOf="@+id/textView_tempo_preparazione_3"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_tempo_preparazione_3" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--Ricetta 4-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout_ricetta_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/sfondo_ricette"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constraintLayout_ricetta_3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout_Titolo_ricetta_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView_titolo_ricetta_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Insalata di spinaci, fragole e noci"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="9sp"
+                            android:gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Titolo_ricetta_4">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Corpo_ricetta_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintWidth_percent="0.475"
+                            app:layout_constraintEnd_toStartOf="@id/constraintLayout_Contenuto_ricetta_4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView_ricetta_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                app:layout_constraintDimensionRatio="H,1350:1080"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:background="@drawable/cena4"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_Contenuto_ricetta_4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintWidth_percent="0.525"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/constraintLayout_Corpo_ricetta_4"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView_ingredienti_4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintWidth_percent="0.8"
+                                android:gravity="center"
+                                android:text="Ingredienti:\n80 g di spinaci freschi, 100 g di fragole, 20 g di noci, 1 cucchiaio di olio EVO, succo di limone e sale q.b."
+                                android:textColor="@color/white"
+                                android:textSize="9sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView_tempo_preparazione_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Tempo di preparazione: 10 minuti"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_ingredienti_4"
+                                app:layout_constraintStart_toStartOf="@+id/textView_ingredienti_4"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_ingredienti_4" />
+
+                            <TextView
+                                android:id="@+id/textView_calorie_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="350 KCal"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView_tempo_preparazione_4"
+                                app:layout_constraintStart_toStartOf="@+id/textView_tempo_preparazione_4"
+                                app:layout_constraintTop_toBottomOf="@+id/textView_tempo_preparazione_4" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@color/ActionBarsSfondo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/indietro"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="26dp"
+                android:background="@drawable/back_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

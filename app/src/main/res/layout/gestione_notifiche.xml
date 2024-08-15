@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".Gestione_notifiche">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/ActionBarsSfondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/indietro"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="45dp"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/messaggi_motivazionali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                app:layout_constraintWidth_percent="0.80"
+                android:text="MESSAGGI MOTIVAZIONALI"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/messaggio_obiettivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rimani motivato e raggiungi tuoi obiettivi"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.15"
+                app:layout_constraintTop_toBottomOf="@id/messaggi_motivazionali"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/messaggio_spiegazione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguire una dieta equilibrata come quella mediterranea porta numerosi benefici a lungo termine per la salute. Tuttavia, è normale sentirsi scoraggiati quando i risultati non sono immediatamente visibili. È proprio in questi momenti che è fondamentale rimanere motivati. Qui puoi attivare le notifiche motivazionali per ricevere incoraggiamenti personalizzati, aiutandoti a rimanere sul percorso giusto e raggiungere i tuoi obiettivi di benessere. Ricorda, il cambiamento richiede tempo, ma con costanza e determinazione, i risultati arriveranno."
+                android:fontFamily="@font/comfortaa_medium"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.15"
+                app:layout_constraintTop_toBottomOf="@id/messaggio_obiettivo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:id="@+id/bottone_ricevi_messaggio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_go"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Ricevi un messaggio motivazionale"
+                android:lineSpacingMultiplier="1.15"
+                android:textColor="@color/AzzurroSaluteMenu"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messaggio_spiegazione"
+                app:layout_constraintWidth_percent="0.90" />
+
+            <Button
+                android:id="@+id/bottone_consenti_notifiche"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_go"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Consenti le notifiche"
+                android:lineSpacingMultiplier="1.15"
+                android:textColor="@color/AzzurroSaluteMenu"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messaggio_spiegazione"
+                app:layout_constraintWidth_percent="0.90" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

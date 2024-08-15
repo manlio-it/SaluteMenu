@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="SaluteMenù"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:shadowDx="10"
+                android:shadowDy="0"
+                android:shadowRadius="30"
+                android:shadowColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/logo"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintWidth_percent="0.675"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ti aiutiamo a fare\nle giuste scelte alimentari\nper la tua salute"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserra_mediumitalic"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/introButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PERCHÉ SCEGLIERE PROPRIO\nLA DIETA MEDITERRANEA"
+                android:padding="12dp"
+                android:elevation="8dp"
+                android:background="@drawable/button_motivazioni"
+                android:textAlignment="center"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:textSize="16sp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tagline"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="38dp"/>
+
+            <Button
+                android:id="@+id/SaluteMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CLICCA QUI\nPER ENTRARE IN SALUTEMENÙ"
+                android:padding="12dp"
+                android:elevation="8dp"
+                android:background="@drawable/button_motivazioni"
+                android:textAlignment="center"
+                android:fontFamily="@font/comfortaa_semibold"
+                android:textSize="16sp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/introButton"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="38dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

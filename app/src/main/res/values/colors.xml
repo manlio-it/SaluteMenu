@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="VerdeSaluteMenu">#2fa100</color>
+    <color name="VerdeSaluteMenuOnClick">#CC2FA100</color>
+    <color name="VerdeBordoSaluteMenu">#246E06</color>
+    <color name="VerdeBordoSaluteMenuOnClick">#CC246E06</color>
+
+    <color name="ArancioneSaluteMenu">#ff7800</color>
+    <color name="ArancioneBordoSaluteMenu">#ff7800</color>
+
+
+    <color name="AzzurroSaluteMenu">#3cb6ff</color>
+    <color name="AzzurroBordoSaluteMenu">#0A6DA8</color>
+
+    <color name="RossoSaluteMenu">#980000</color>
+    <color name="RossoSaluteMenuOnClick">#CC980000</color>
+    <color name="RossoBordoSaluteMenu">#400000</color>
+    <color name="RossoBordoSaluteMenuOnClick">#CC400000</color>
+
+    <color name="ActionBarsSfondo">#63000000</color>
+    <color name="selezione_colore_nero_off">#59000000</color>
+    <color name="selezione_colore_nero_on">#BF000000</color>
+    <color name="colore_background_dialog">#E6000000</color>
+    <color name="colore_background_dialog_bottone">#40000000</color>
+
+    <color name="sfondo_ricette">#73000000</color>
+</resources>

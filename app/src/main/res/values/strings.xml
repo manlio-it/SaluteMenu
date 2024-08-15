@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SaluteMenù Dieta Mediterranea</string>
+
+
+    <string name="frase_1">Informati suoi benefici di seguire la dieta mediterranea.</string>
+    <string name="frase_2">La dieta mediterranea: semplice, gustosa e ricca di benefici.</string>
+    <string name="frase_3">Ogni giorno è un’opportunità per conoscere la dieta mediterranea.</string>
+    <string name="frase_4">La dieta mediterranea è la somma della conoscenza di più popoli e culture diverse.</string>
+    <string name="frase_5">Ogni piatto mediterraneo è un pezzo della tradizione italiana.</string>
+    <string name="frase_6">La dieta mediterranea premia chi persevera con intelletto e pazienza.</string>
+    <string name="frase_7">La costanza trasforma le abitudini in obiettivi raggiunti.</string>
+    <string name="frase_8">Ogni passo avanti, anche lento, ti avvicina ai tuoi obiettivi.</string>
+    <string name="frase_9">Sii l’eroe della tua storia.</string>
+    <string name="frase_10">Il segreto per andare avanti è iniziare.</string>
+    <string name="frase_11">Porsi un obiettivo è la più potente forza umana di auto motivazione.</string>
+    <string name="frase_12">Gli obiettivi più importanti non si raggiungono si vivono.</string>
+    <string name="frase_13">Il successo non è definitivo e l’insuccesso non è fatale. L’unica cosa che conta davvero è il coraggio di continuare.</string>
+    <string name="frase_14">Non ci tratteniamo dall’osare perché le cose sono difficili. È perché non osiamo che le cose risultano difficili.</string>
+    <string name="frase_15">Lotta per progredire, non per essere perfetto.</string>
+    <string name="frase_16">Finché c’è un obiettivo a cui puntare nulla è impossibile.</string>
+    <string name="frase_17">È la motivazione che trasforma il tuo destino.</string>
+    <string name="frase_18">Non importa quanto lentamente si va, finché non ti fermi.</string>
+    <string name="frase_19">Solo io posso cambiare la mia vita, nessuno può farlo per me.</string>
+    <string name="frase_20">Chi è lento e costante vince la gara.</string>
+    <string name="frase_21">Uno dei più grandi piaceri della vita è portare a termine ciò che gli altri dicevano che non saresti riuscito a fare.</string>
+    <string name="frase_22">La vita è per il 10% cosa ti accade e per il 90% come reagisci.</string>
+    <string name="frase_23">Il mondo è pieno di persone di successo, alle quali era stato detto più e più volte che il loro sogno era impossibile. Scelsero di non ascoltare.</string>
+    <string name="frase_24">Non è che alcune persone hanno la forza di volontà e altre no. È che alcune persone sono pronte a cambiare e altre non lo sono.</string>
+    <string name="frase_25">Le cattive abitudini sono come catene: troppo leggere da sentire fino a quando non sono troppo pesanti da portare.</string>
+    <string name="frase_26">Non aspettare il momento giusto. Non sarà mai perfetto. Ci saranno sempre sfide, ostacoli. E allora inizia ora. Ogni piccolo passo serve a farti crescere e diventare sempre più forte, sempre più bravo, sempre più sicuro di te.</string>
+    <string name="frase_27">Se hai intenzione di perdere peso, non aspettare che accada, fallo accadere, sii paziente e credici.</string>
+    <string name="frase_28">C’è una differenza tra interesse e impegno. Quando sei interessato a fare qualcosa, lo fai solo quando le circostanze lo permettono. Quando si è impegnati a fare qualcosa, non si accettano scuse ma solo risultati.</string>
+    <string name="frase_29">Alcuni dicono che al destino non si comanda, che il destino non è una cosa nostra. Ma io so che non è così. Il nostro destino vive in noi, bisogna soltanto avere il coraggio di vederlo.</string>
+    <string name="frase_30">Tutta la fatica che stai facendo oggi per stare in forma, sarà la gioia del domani, non mollare.</string>
+
+</resources>

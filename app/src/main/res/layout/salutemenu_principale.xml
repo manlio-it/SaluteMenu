@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settanta"
+    tools:context=".SaluteMenuPrincipale">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/ActionBarsSfondo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="SaluteMenù"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:shadowDx="10"
+            android:shadowDy="0"
+            android:shadowRadius="30"
+            android:shadowColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/logo"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMenueneral"
+            android:paddingBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutMenu1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:background="@drawable/background_menu_sfondo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintLayoutMenueneral"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <Button
+                    android:id="@+id/bottone_utente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="Profilo utente"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="7dp"/>
+
+                <Button
+                    android:id="@+id/bottone_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="IL TUO FABBISOGNO CALORICO E BMI"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_utente"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+
+                <Button
+                    android:id="@+id/bottone_acqua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="IL TUO FABBISOGNO D'ACQUA"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_calorie"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+
+                <Button
+                    android:id="@+id/bottone_notifiche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="MESSAGGI MOTIVAZIONALI"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_acqua"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutMenu2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:background="@drawable/background_menu_sfondo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayoutMenu1"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <Button
+                    android:id="@+id/bottone_colazioni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="Colazioni consigliate"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="7dp"/>
+
+                <Button
+                    android:id="@+id/bottone_pranzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="Pranzi consigliati"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_colazioni"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+
+                <Button
+                    android:id="@+id/bottone_cene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="Cene consigliate"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_pranzi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+
+                <Button
+                    android:id="@+id/bottone_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/comfortaa_semibold"
+                    android:gravity="center"
+                    android:text="SCOPRI I SUPER-FOOD"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toBottomOf="@id/bottone_cene"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="0dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
